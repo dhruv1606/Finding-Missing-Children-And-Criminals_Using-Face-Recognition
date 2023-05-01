@@ -1,0 +1,33 @@
+       body {
+            background-image: url("img.png");
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+  background: none;
+  color: white;
+  border: 2px solid;
+  padding: 1em 2em;
+  margin: 5px;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+
+a:hover {
+  border-color: white;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+        canvas {
+            display: none;
+        }
+
+        #webCam {
+            border: 3px solid black;
+            border-radius: 10px;
+        }

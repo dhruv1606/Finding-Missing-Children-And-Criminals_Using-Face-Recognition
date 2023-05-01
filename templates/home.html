@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/app.css')}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="{{ url_for('static',filename='js/jsfile.css')}}"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway:wght@800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="one">
+    <div class="panel">
+      <div id="header">
+        <h1>Finding Missing Chilren and Crimimals Using Face Recognition</h1>
+      </div>
+    </div>
+    <div id="faceimage">
+
+    </div>
+    <div class="description">
+      <div class="box">
+        <img src="{{url_for('static', filename='css/homeimg.png')}}" width="400px" height="300px">
+      </div>
+      <div id="description">
+        <p class="intro">
+          Welcome to our website, where we use cutting-edge face recognition technology to help find missing children
+          and
+          identify criminals. Our platform combines advanced algorithms with a vast database of images to enable quick
+          and
+          accurate searches.
+        </p>
+        <p class="intro">
+          For families with missing children, we provide a valuable tool for locating their loved ones. We also work
+          closely with law enforcement agencies and provide them with access to our system to help
+          in their investigations.
+        </p>
+        <p class="intro">
+          In addition, our website assists law enforcement agencies in identifying criminals. By using facial
+          recognition
+          technology, we
+          can quickly identify potential suspects and provide vital information to investigators.
+        </p>
+        <p class="intro">
+          Click the button below to open the camera and recognize a face and check whether they are a criminal or a
+          missing children or none</p>
+      </div>
+    </div>
+    <div id="buttons">
+      <form action="/camera" method="GET">
+        <button>Open Camera</button>
+      </form>
+    </div>
+  </div>
+  <div class="two">
+    <h2>Statistics: </h2>
+    <h3>Missing Children: </h3>
+    <div class="childimg slide-in">
+      <img src="{{url_for('static', filename='css/childstats.jpg')}}" height="250px">
+    </div>
+    <div class="stat slide-in">
+      <p>As per the latest figures of the National Crime Records Bureau (NCRB), 59,262 children went missing in India in
+        2020. With 48,972 children remaining untraced from the previous years, the total number of missing children has
+        gone up to 1,08,234.</p>
+      <p>Many children are abducted and trafficked or used for their own gains. These crimes are on the rise day-by-day.
+        This website gives the functionality to use your camera and check whether a child whose face is detected is a
+        missing child or not so whenever you see something suspecious, you can check and make your contribution by
+        finding the missing children</p>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="one">
+    <h3>Criminals: </h3>
+    <div class="box img2 slide-in">
+      <img src="{{url_for('static', filename='css/prison.jpg')}}" height="250px" width="500px">
+    </div>
+    <div class="description slide-in">
+      <p class="intro">The issue of prisoners who have escaped or been released from jail and are wanted by law
+        enforcement
+        authorities is a serious concern for public safety. In recent years, advances in technology have made it
+        possible to use facial recognition technology to identify individuals who are wanted by law enforcement
+        agencies.</p>
+      <p class="intro">In this project, using your camera you can recognize the face of the person you want to. If a
+        match is found in
+        the database, it will show you the name and age and various details of the person's whose face is detected</p>
+    </div>
+    <div id="buttons">
+      <form action="/camera" method="GET">
+        <button>Open Camera</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
